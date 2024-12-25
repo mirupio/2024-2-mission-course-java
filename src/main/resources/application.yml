@@ -1,1 +1,18 @@
-spring.application.name=2024-2-mission-course-java
+spring:
+  application:
+    name: mission_course
+
+  datasource:
+    url : jdbc:h2:mem:todo;MODE=MYSQL
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
